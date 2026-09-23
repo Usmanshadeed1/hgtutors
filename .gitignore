@@ -1,0 +1,11 @@
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Client source material (briefs, keyword research, raw assets)
+live/
