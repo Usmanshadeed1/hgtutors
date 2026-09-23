@@ -17185,14 +17185,43 @@ blockquote {
   pointer-events: none;
 }
 
-/* mobile: give the family + FAQ images more presence */
+/* mobile: family + FAQ images must fill the column.
+   The img was already width:100%, but its PARENTS were still narrow
+   (.about-one-images-one is inline-flex, .faq-image-wrap is flex:0 45%),
+   so 100% resolved against a half-width box. Widen the containers too. */
 @media screen and (max-width: 767px){
+  .about-one-images-wrap,
+  .offere-one-image-wrap,
+  .faq-one-wrap,
+  .about-one-wrap{
+    width: 100%;
+    max-width: 100%;
+  }
+  .faq-image-wrap{
+    flex: 0 0 100%;
+    width: 100%;
+    max-width: 100%;
+  }
+  .about-one-images-one,
+  .about-one-images-one.position-relative,
+  .about-one-images-one.position-relative.offerd-one-image-one{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
   .about-one-images-one img,
   .faq-image-wrap img{
+    display: block;
     width: 100%;
+    max-width: 100%;
     height: 480px;
     object-fit: cover;
     border-radius: 20px;
+  }
+  /* the small overlapping second image is absolutely positioned and
+     collides with a full-width parent on a phone */
+  .about-image-two.home-two-we-offered-image-two{
+    display: none;
   }
 }
 @media screen and (max-width: 480px){
