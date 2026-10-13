@@ -17146,3 +17146,96 @@ blockquote {
   .contact-us-card.contact-us-two-card,
   .contact-us-card.contact-us-two-card.third{ padding:18px; }
 }
+
+
+/* =========================================================
+   CONTACT — rebuilt section (replaces template contact-two-form)
+   ========================================================= */
+.ct{ background:var(--hg-tint); padding:100px 0 110px; }
+.ct-shell{
+  width:100%; max-width:1320px; margin:0 auto; padding:0 15px;
+  display:grid; grid-template-columns:minmax(0,5fr) minmax(0,7fr);
+  gap:64px; align-items:start;
+}
+/* left column */
+.ct-info{ padding-top:44px; }
+.ct-title{
+  color:var(--third-color); margin:14px 0 18px; text-transform:none;
+  font-size:clamp(32px,3.3vw,46px); line-height:1.12; letter-spacing:-.02em;
+}
+.ct-lead{ font-size:16.5px; line-height:1.7; color:#5a6478; margin:0; }
+.ct-list{
+  list-style:none; margin:36px 0 0; padding:0;
+  background:#fff; border-radius:20px; box-shadow:var(--hg-card-shadow);
+}
+.ct-item{ display:flex; align-items:center; gap:18px; padding:22px 26px; }
+.ct-item + .ct-item{ border-top:1px solid #edf1f7; }
+.ct-icon{
+  flex:none; width:48px; height:48px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  background:var(--hg-tint); color:var(--third-color);
+}
+.ct-icon svg{ width:22px; height:22px; }
+.ct-item-body{ display:flex; flex-direction:column; gap:3px; min-width:0; }
+.ct-item-label{ font-size:13px; font-weight:600; letter-spacing:.04em; text-transform:uppercase; color:#8b98b5; }
+.ct-item-value{ font-size:16.5px; font-weight:600; color:var(--third-color); text-decoration:none; overflow-wrap:anywhere; }
+a.ct-item-value:hover{ text-decoration:underline; text-underline-offset:3px; }
+
+/* right column */
+.ct-card{ background:#fff; border-radius:20px; box-shadow:var(--hg-card-shadow); padding:44px 44px 40px; }
+.ct-form-title{ font-size:24px; font-weight:700; color:var(--third-color); margin:0 0 6px; letter-spacing:-.012em; text-transform:none; }
+.ct-form-hint{ font-size:14.5px; color:#8b98b5; margin:0 0 28px; }
+.ct-grid{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:20px; }
+.ct-wide{ grid-column:1 / -1; }
+.ct-field{ display:flex; flex-direction:column; min-width:0; }
+.ct-field label{ font-size:14px; font-weight:600; color:var(--third-color); margin:0 0 8px; text-transform:none; letter-spacing:0; }
+.ct-field input, .ct-field textarea{
+  width:100%; height:52px; margin:0; font-family:inherit; font-size:15.5px; color:#01102e;
+  padding:0 16px; background:#fff;
+  border:1.5px solid #d3dcea; border-radius:4px;
+  transition:border-color .18s ease, box-shadow .18s ease;
+  -webkit-appearance:none; appearance:none;
+}
+.ct-field textarea{ height:auto; min-height:140px; padding:14px 16px; line-height:1.6; resize:vertical; }
+.ct-field input::placeholder, .ct-field textarea::placeholder{ color:#a7b2c8; opacity:1; }
+.ct-field input[type="date"]{ color:#a7b2c8; }
+.ct-field input[type="date"].has-value, .ct-field input[type="date"]:focus{ color:#01102e; }
+.ct-field input[type="date"]::-webkit-calendar-picker-indicator{ cursor:pointer; opacity:.55; }
+.ct-field input:hover, .ct-field textarea:hover{ border-color:#b8c5dc; }
+.ct-field input:focus, .ct-field textarea:focus{ outline:none; border-color:var(--third-color); box-shadow:0 0 0 3px rgba(1,31,91,.09); }
+.ct-field.has-error input, .ct-field.has-error textarea{ border-color:#b60707; }
+.ct-error{ display:none; margin:16px 0 0; font-size:14px; color:#b60707; }
+.ct-error.is-visible{ display:block; }
+.ct-actions{ display:flex; align-items:center; justify-content:space-between; gap:16px; margin-top:28px; }
+.ct-note{ font-size:14px; color:#8b98b5; }
+.ct-btn{
+  appearance:none; border:0; cursor:pointer; font-family:inherit;
+  background:var(--third-color); color:#fff; font-size:15px; font-weight:600;
+  padding:15px 34px; border-radius:0; transition:background .2s ease;
+}
+.ct-btn:hover{ background:#01102e; }
+.ct-btn:focus-visible{ outline:2px solid var(--third-color); outline-offset:3px; }
+/* success */
+.ct-done{ display:none; text-align:center; padding:40px 10px; }
+.ct-card.is-sent .ct-form{ display:none; }
+.ct-card.is-sent .ct-done{ display:block; }
+.ct-done-icon{
+  width:64px; height:64px; margin:0 auto 20px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  background:var(--hg-tint); color:var(--third-color);
+}
+.ct-done-icon svg{ width:30px; height:30px; }
+
+@media screen and (max-width:991px){
+  .ct{ padding:72px 0 80px; }
+  .ct-shell{ grid-template-columns:1fr; gap:36px; padding:0 18px; }
+  .ct-info{ padding-top:0; }
+}
+@media screen and (max-width:600px){
+  .ct{ padding:56px 0 64px; }
+  .ct-card{ padding:28px 20px 26px; }
+  .ct-grid{ grid-template-columns:1fr; gap:16px; }
+  .ct-item{ padding:18px; gap:14px; }
+  .ct-actions{ flex-direction:column-reverse; align-items:stretch; text-align:center; }
+  .ct-btn{ width:100%; }
+}
