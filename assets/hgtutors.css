@@ -17478,11 +17478,11 @@ blockquote {
   border:0;
   border-radius:20px;
   padding:34px 28px 30px;
-  box-shadow:0 10px 30px -12px rgba(1,31,91,.12), 0 2px 6px rgba(1,31,91,.04);
+  box-shadow:0 12px 34px -12px rgba(1,31,91,.18), 0 2px 8px rgba(1,31,91,.06);
 }
 .exam-card:hover{
   border-color:transparent;
-  box-shadow:0 18px 40px -16px rgba(1,31,91,.20), 0 3px 8px rgba(1,31,91,.05);
+  box-shadow:0 20px 44px -16px rgba(1,31,91,.26), 0 4px 10px rgba(1,31,91,.07);
   transform:translateY(-3px);
 }
 /* same icon box on every card so labels and headings line up */
@@ -17493,4 +17493,75 @@ blockquote {
 .exam-card .achieved-icon img{ width:auto; height:52px; max-width:52px; object-fit:contain; }
 @media screen and (max-width:700px){
   .exam-card{ padding:28px 24px; border-radius:18px; }
+}
+
+/* =========================================================
+   HOME — clean card system (reference: client's example site)
+   rhythm: tint / white / tint / white …
+   ========================================================= */
+:root{ --hg-tint:#f4f7fc;
+  --hg-card-shadow:0 12px 34px -12px rgba(1,31,91,.18), 0 2px 8px rgba(1,31,91,.06);
+  --hg-card-shadow-hover:0 20px 44px -16px rgba(1,31,91,.26), 0 4px 10px rgba(1,31,91,.07); }
+
+/* 2. why families choose us — white, rounder images */
+.home-about-one.offered-one{ background:#fff; }
+.offered-one .about-one-images-one,
+.offered-one .about-one-images-one img,
+.offered-one .about-image-two,
+.offered-one .about-image-two img{ border-radius:24px; }
+
+/* 3. how it works — tint, white soft cards */
+.hg-process{ background:var(--hg-tint); }
+.hg-step{ border:0; border-radius:20px; box-shadow:var(--hg-card-shadow); }
+.hg-step:hover{ border-color:transparent; box-shadow:var(--hg-card-shadow-hover); }
+
+/* 4. CTA banner — rounded panel inside the page, on white */
+.video-section-one{ background:#fff; padding-top:90px; }
+.video-content-wrap{ border-radius:24px; overflow:hidden; box-shadow:var(--hg-card-shadow); }
+
+/* 5. consultancy cards — tint section, navy headings, soft cards */
+.resouces-for-student.resources-for-student-two{ background:var(--hg-tint); }
+.resources-for-student-two .subheading.color-white{ color:var(--secondary-color); }
+.resources-for-student-two .slide-title.color-white,
+.resources-for-student-two h2.color-white{ color:var(--third-color); }
+.resources-for-student-two .icon-box-twelve.academic-card-two{
+  border:0; border-radius:20px; box-shadow:var(--hg-card-shadow);
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.resources-for-student-two .icon-box-twelve.academic-card-two:hover{
+  transform:translateY(-3px); box-shadow:var(--hg-card-shadow-hover);
+}
+
+/* 6. FAQ — white, each question in a soft rounded box */
+.faq-one{ background:#fff; }
+.faq-one .faq-image-wrap,
+.faq-one .faq-image-wrap img{ border-radius:24px; }
+.faq-one .accrodian-one{
+  background:#fff; border-radius:16px; padding:20px 24px;
+  box-shadow:0 8px 24px -12px rgba(1,31,91,.16), 0 1px 4px rgba(1,31,91,.05);
+}
+.faq-one .accrodian-one + .accrodian-one{ margin-top:12px; }
+.faq-one .accrodian-one-toggle{ border-bottom:0; padding:0; }
+.faq-one .faq-three-description{ margin-top:14px; }
+
+/* 7. reviews — tint, white soft cards */
+.testimonial-two,
+.testimonial-two:where(.w-variant-1dfdf16c-8a1c-e4fb-4c6c-97aea1e656d0),
+.testimonial-two:where(.w-variant-30ac31d3-e646-717c-fc83-8471ef265bc4){ background:var(--hg-tint); padding-bottom:90px; }
+.testimonial-two .client-card-one{
+  background:#fff; border:0; border-radius:20px; box-shadow:var(--hg-card-shadow);
+}
+.testimonial-two .client-card-one:hover{ box-shadow:var(--hg-card-shadow-hover); }
+
+/* 8. enquiry form — rounder card, softer shadow */
+.eq-card{
+  border-radius:20px;
+  box-shadow:0 24px 60px -20px rgba(1,16,46,.45), 0 4px 14px rgba(1,16,46,.12);
+}
+
+@media screen and (max-width:767px){
+  .video-section-one{ padding-top:60px; }
+  .video-content-wrap{ border-radius:20px; }
+  .faq-one .accrodian-one{ padding:18px 18px; }
+  .testimonial-two{ padding-bottom:60px; }
 }
