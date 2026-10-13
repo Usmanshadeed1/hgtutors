@@ -17135,3 +17135,14 @@ blockquote {
 .contact-date-input{ color:var(--third-color); font-family:inherit; height:60px; }
 .contact-date-input::-webkit-calendar-picker-indicator{ cursor:pointer; opacity:.6; }
 .contact-date-input::-webkit-calendar-picker-indicator:hover{ opacity:1; }
+
+/* contact: equal-height info cards (template zeroed the third card's bottom padding) */
+.contact-us-card.contact-us-two-card,
+.contact-us-card.contact-us-two-card.third{ padding:22px 24px; margin-bottom:14px; align-items:center; }
+.contact-us-card.contact-us-two-card.third{ margin-bottom:0; }
+.contact-one-card-content .margin-top-five{ margin-top:4px; }
+.contact-form-field-gap{ margin-bottom:24px; }
+@media screen and (max-width:767px){
+  .contact-us-card.contact-us-two-card,
+  .contact-us-card.contact-us-two-card.third{ padding:18px; }
+}
