@@ -17129,3 +17129,9 @@ blockquote {
   .our-skill-three .our-skill-content-wrap{ padding:28px 22px; }
   .contact-us-card.contact-us-two-card{ padding:18px; }
 }
+
+
+/* contact: child's date of birth field */
+.contact-date-input{ color:var(--third-color); font-family:inherit; height:60px; }
+.contact-date-input::-webkit-calendar-picker-indicator{ cursor:pointer; opacity:.6; }
+.contact-date-input::-webkit-calendar-picker-indicator:hover{ opacity:1; }

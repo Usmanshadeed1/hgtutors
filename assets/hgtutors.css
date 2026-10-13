@@ -17565,3 +17565,45 @@ blockquote {
   .faq-one .accrodian-one{ padding:18px 18px; }
   .testimonial-two{ padding-bottom:60px; }
 }
+
+
+/* ---------- "Every child deserves the right tuition" ---------- */
+.hg-trust{ background:#fff; padding:110px 0 20px; }
+.hg-trust-head{ text-align:center; max-width:640px; margin:0 auto 56px; }
+.hg-trust-title{
+  color:var(--third-color); margin:14px 0 16px;
+  font-size:clamp(30px,3.4vw,46px); line-height:1.15; letter-spacing:-.018em;
+}
+.hg-trust-lead{ font-size:17px; line-height:1.65; color:#5a6478; margin:0; }
+.hg-trust-grid{ display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:28px; }
+.hg-trust-card{
+  background:#fff; border-radius:20px; text-align:center;
+  padding:44px 34px 40px;
+  box-shadow:var(--hg-card-shadow);
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.hg-trust-card:hover{ transform:translateY(-4px); box-shadow:var(--hg-card-shadow-hover); }
+.hg-trust-icon{
+  width:72px; height:72px; margin:0 auto 26px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  background:var(--hg-tint); color:var(--third-color);
+}
+.hg-trust-icon svg{ width:34px; height:34px; }
+.hg-trust-card-title{
+  font-size:21px; font-weight:700; color:var(--third-color);
+  margin:0 0 12px; letter-spacing:-.01em; text-transform:none;
+}
+.hg-trust-card-text{ font-size:15.5px; line-height:1.65; color:#5a6478; margin:0; }
+
+@media screen and (max-width:991px){
+  .hg-trust{ padding:80px 0 10px; }
+  .hg-trust-grid{ gap:20px; }
+  .hg-trust-card{ padding:36px 24px 32px; }
+}
+@media screen and (max-width:767px){
+  .hg-trust{ padding:64px 0 0; }
+  .hg-trust-head{ margin-bottom:36px; }
+  .hg-trust-grid{ grid-template-columns:1fr; gap:16px; }
+  .hg-trust-card{ padding:30px 24px 28px; }
+  .hg-trust-icon{ width:64px; height:64px; margin-bottom:20px; }
+}
