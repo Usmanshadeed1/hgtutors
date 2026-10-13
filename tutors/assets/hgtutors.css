@@ -17026,3 +17026,106 @@ blockquote {
 .teachers-hero{ padding-top:210px; padding-bottom:92px; }
 @media screen and (max-width:991px){ .teachers-hero{ padding-top:170px; padding-bottom:72px; } }
 @media screen and (max-width:640px){ .teachers-hero{ padding-top:132px; padding-bottom:58px; } }
+
+/* =========================================================
+   CLEAN CARD SYSTEM — shared across inner pages (matches Home)
+   ========================================================= */
+:root{ --hg-tint:#f4f7fc;
+  --hg-card-shadow:0 12px 34px -12px rgba(1,31,91,.18), 0 2px 8px rgba(1,31,91,.06);
+  --hg-card-shadow-hover:0 20px 44px -16px rgba(1,31,91,.26), 0 4px 10px rgba(1,31,91,.07); }
+.hg-card-base{ background:#fff; border:0; border-radius:20px; box-shadow:var(--hg-card-shadow); }
+
+/* ---------- 1-to-1 Tuition ---------- */
+.services-one.why-us-two{ background:#fff; }
+.services-one .service-one-image-wrap,
+.services-one .service-one-image-wrap img{ border-radius:24px; }
+
+.hs{ background:var(--hg-tint); }
+.hs .subheading.color-white{ color:var(--secondary-color); }
+.hs-title{ color:var(--third-color); }
+.hs-arrow{ border-color:rgba(1,31,91,.25); color:var(--third-color); background:#fff; }
+.hs-arrow:hover{ background:var(--third-color); color:#fff; border-color:var(--third-color); }
+.hs-arrow:focus-visible{ outline-color:var(--third-color); }
+.hs-arrow.swiper-button-disabled:hover{ background:#fff; color:var(--third-color); border-color:rgba(1,31,91,.25); }
+.hs-pagination .swiper-pagination-bullet{ background:rgba(1,31,91,.22); }
+.hs-pagination .swiper-pagination-bullet-active{ background:var(--third-color); }
+.hs-swiper{ padding:6px 4px 28px; margin:-6px -4px 0; }
+.hs-card{ border-radius:20px; box-shadow:var(--hg-card-shadow); }
+.hs-card:hover{ box-shadow:var(--hg-card-shadow-hover); }
+
+.hg-process{ background:#fff; }
+.hg-step{ border:0; border-radius:20px; box-shadow:var(--hg-card-shadow); }
+.hg-step:hover{ border-color:transparent; box-shadow:var(--hg-card-shadow-hover); }
+
+/* ---------- Educational Consultancy ---------- */
+.home-about-one.why-choos-us-two{ background:#fff; }
+.why-choos-us-two .about-one-image-main,
+.why-choos-us-two .about-one-image-main img,
+.why-choos-us-two .about-one-images-wrap img{ border-radius:24px; }
+
+.home-about-one.curriculam-two{ background:var(--hg-tint); }
+.curriculam-two .icon-box-three{
+  background:#fff; border-radius:20px; box-shadow:var(--hg-card-shadow);
+  padding:22px 24px; margin-top:22px;
+}
+.curriculam-two .about-one-images-wrap img,
+.curriculam-two .about-image-two img{ border-radius:24px; }
+
+.our-skill-three{ background:#fff; }
+.our-skill-three .color-white{ color:var(--third-color); }
+.our-skill-three .our-skill-paragraph .color-white{ color:#5a6478; }
+.our-skill-three .subheading.color-white{ color:var(--secondary-color); }
+.our-skill-three .our-skill-image,
+.our-skill-three .our-skill-image img{ border-radius:24px; }
+.our-skill-three .prograss-bar.prograssbar-three{ background-color:#dde4f1; }
+.our-skill-three .our-skill-content-wrap{
+  background:#fff; border-radius:20px; box-shadow:var(--hg-card-shadow);
+  padding:40px 36px;
+}
+
+/* ---------- Tutors + Tutor profile ---------- */
+.teachers-setion{ background:var(--hg-tint); }
+.teachers-setion .teachers-card{
+  background:#fff; border-radius:20px; overflow:hidden; box-shadow:var(--hg-card-shadow);
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.teachers-setion .teachers-card:hover{ transform:translateY(-3px); box-shadow:var(--hg-card-shadow-hover); }
+.teachers-details-section{ background:#fff; }
+.teachers-details-image,
+.teachers-details-image img{ border-radius:24px; overflow:hidden; }
+
+/* ---------- Contact ---------- */
+.contact-two-form{ background:var(--hg-tint); }
+.contact-us-card.contact-us-two-card{
+  background:#fff; border-radius:20px; box-shadow:var(--hg-card-shadow);
+  padding:20px 24px; margin-bottom:14px; align-items:center;
+}
+.contact-two-from-wrap{ border-radius:20px; box-shadow:var(--hg-card-shadow); }
+
+/* ---------- Blog + Blog post ---------- */
+.blog-two-section{ background:var(--hg-tint); }
+.blog-two-wraper{
+  border-radius:20px; box-shadow:var(--hg-card-shadow);
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+.blog-two-wraper:hover{ transform:translateY(-3px); box-shadow:var(--hg-card-shadow-hover); }
+.our-latest-news-one{ background:var(--hg-tint); }
+.our-latest-news-one .blog-card-one{
+  display:block; height:100%; background:#fff; border-radius:20px; overflow:hidden;
+  box-shadow:var(--hg-card-shadow); transition:transform .25s ease, box-shadow .25s ease;
+}
+.our-latest-news-one .blog-card-one:hover{ transform:translateY(-3px); box-shadow:var(--hg-card-shadow-hover); }
+.our-latest-news-one .blog-card-one .border-radius-twenty{ border-radius:0; }
+.our-latest-news-one .blog-card-one-details{ padding:22px 24px 26px; }
+
+/* ---------- Enquiry form (all pages) ---------- */
+.eq-card{
+  border-radius:20px;
+  box-shadow:0 24px 60px -20px rgba(1,16,46,.45), 0 4px 14px rgba(1,16,46,.12);
+}
+
+@media screen and (max-width:767px){
+  .curriculam-two .icon-box-three{ padding:18px; }
+  .our-skill-three .our-skill-content-wrap{ padding:28px 22px; }
+  .contact-us-card.contact-us-two-card{ padding:18px; }
+}
