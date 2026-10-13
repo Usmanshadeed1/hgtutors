@@ -530,148 +530,48 @@
           </div>
         </div>
       </section>
-      <section class="eq">
-  <div class="eq-shell">
-
-    <div class="eq-intro">
-      <div class="subheading eq-eyebrow">make an enquiry</div>
-      <h1 class="eq-title">Tell us about<br>your child</h1>
-      <p class="eq-lead">A few quick questions so we can match the right tutor &mdash; it takes
-        about a minute. Every enquiry comes straight to Helen, who reads them all and replies
-        personally.</p>
-
-      <div class="eq-divider"></div>
-
-      <div class="eq-contact-label">Prefer to talk?</div>
-      <ul class="eq-contact">
-        <li>
-          <span class="eq-contact-ico" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-              stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v13H5.5L4 20V5z"/></svg>
-          </span>
-          <a href="mailto:enquiries@hgtutors.com">enquiries@hgtutors.com</a>
-        </li>
-        <li>
-          <span class="eq-contact-ico" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M12 21s7-5.7 7-11a7 7 0 1 0-14 0c0 5.3 7 11 7 11z"/>
-              <circle cx="12" cy="10" r="2.5"/></svg>
-          </span>
-          <span>47 Cadogan Street, London SW3</span>
-        </li>
-      </ul>
-    </div><div class="eq-card">
-      <div class="eq-progress" aria-hidden="true">
-        <div class="eq-progress-bar"><span class="eq-progress-fill" style="width:25%"></span></div>
-        <div class="eq-progress-text"><span class="eq-step-now">1</span> of 4</div>
-      </div>
-
-      <form class="eq-form" id="enquiryForm" novalidate>
-
-        <!-- STEP 1 -->
-        <fieldset class="eq-step is-active" data-step="1">
-          <legend class="eq-legend">What are you preparing for?</legend>
-          <p class="eq-hint">Choose the closest option &mdash; you can add detail later.</p>
-          <div class="eq-choices"><label class="eq-choice"><input type="radio" name="exam" value="7+"><span class="eq-choice-inner"><span class="eq-choice-code">7+</span><span class="eq-choice-sub">Year 2 entry</span></span></label><label class="eq-choice"><input type="radio" name="exam" value="8+"><span class="eq-choice-inner"><span class="eq-choice-code">8+</span><span class="eq-choice-sub">Year 3 entry</span></span></label><label class="eq-choice"><input type="radio" name="exam" value="9+"><span class="eq-choice-inner"><span class="eq-choice-code">9+</span><span class="eq-choice-sub">Year 4 entry</span></span></label><label class="eq-choice"><input type="radio" name="exam" value="10+"><span class="eq-choice-inner"><span class="eq-choice-code">10+</span><span class="eq-choice-sub">Year 5 entry</span></span></label><label class="eq-choice"><input type="radio" name="exam" value="11+"><span class="eq-choice-inner"><span class="eq-choice-code">11+</span><span class="eq-choice-sub">Year 6 entry</span></span></label><label class="eq-choice"><input type="radio" name="exam" value="13+"><span class="eq-choice-inner"><span class="eq-choice-code">13+</span><span class="eq-choice-sub">Year 8 entry</span></span></label><label class="eq-choice"><input type="radio" name="exam" value="ISEB"><span class="eq-choice-inner"><span class="eq-choice-code">ISEB</span><span class="eq-choice-sub">Common Pre-Test</span></span></label><label class="eq-choice"><input type="radio" name="exam" value="General support"><span class="eq-choice-inner"><span class="eq-choice-code">General</span><span class="eq-choice-sub">English &amp; maths support</span></span></label><label class="eq-choice"><input type="radio" name="exam" value="Not sure yet"><span class="eq-choice-inner"><span class="eq-choice-code">Not sure yet</span><span class="eq-choice-sub">We can advise</span></span></label></div>
-          <p class="eq-error" data-error="exam">Please choose one to continue.</p>
-          <div class="eq-actions">
-            <button type="button" class="eq-btn eq-next" data-next>Continue</button>
-          </div>
-        </fieldset>
-
-        <!-- STEP 2 -->
-        <fieldset class="eq-step" data-step="2">
-          <legend class="eq-legend">About your child</legend>
-          <p class="eq-hint">This helps us judge the right level and pace.</p>
-          <div class="eq-grid">
-            <div class="eq-field">
-              <label for="childName">Child&rsquo;s full name</label>
-              <input type="text" id="childName" name="childName" autocomplete="off" required>
-              <span class="eq-error" data-error="childName">Please enter your child&rsquo;s name.</span>
-            </div>
-            <div class="eq-field">
-              <label for="childDob">Date of birth</label>
-              <input type="date" id="childDob" name="childDob" required>
-              <span class="eq-error" data-error="childDob">Please enter a date of birth.</span>
-            </div>
-            <div class="eq-field eq-field-wide">
-              <label for="childSchool">Current school <span class="eq-opt">(optional)</span></label>
-              <input type="text" id="childSchool" name="childSchool" autocomplete="off">
-            </div>
-          </div>
-          <div class="eq-actions">
-            <button type="button" class="eq-btn-ghost" data-back>Back</button>
-            <button type="button" class="eq-btn eq-next" data-next>Continue</button>
-          </div>
-        </fieldset>
-
-        <!-- STEP 3 -->
-        <fieldset class="eq-step" data-step="3">
-          <legend class="eq-legend">Where would you like lessons?</legend>
-          <p class="eq-hint">Most families choose in-person at home.</p>
-          <div class="eq-pills"><label class="eq-pill"><input type="radio" name="location" value="Chelsea"><span>Chelsea</span></label><label class="eq-pill"><input type="radio" name="location" value="Kensington"><span>Kensington</span></label><label class="eq-pill"><input type="radio" name="location" value="Fulham"><span>Fulham</span></label><label class="eq-pill"><input type="radio" name="location" value="Elsewhere in London"><span>Elsewhere in London</span></label><label class="eq-pill"><input type="radio" name="location" value="Online"><span>Online</span></label></div>
-          <p class="eq-error" data-error="location">Please choose a preference.</p>
-          <div class="eq-field eq-field-wide eq-mt">
-            <label for="notes">Anything else we should know? <span class="eq-opt">(optional)</span></label>
-            <textarea id="notes" name="notes" rows="4"
-              placeholder="Target schools, timings, areas your child finds difficult&hellip;"></textarea>
-          </div>
-          <div class="eq-actions">
-            <button type="button" class="eq-btn-ghost" data-back>Back</button>
-            <button type="button" class="eq-btn eq-next" data-next>Continue</button>
-          </div>
-        </fieldset>
-
-        <!-- STEP 4 -->
-        <fieldset class="eq-step" data-step="4">
-          <legend class="eq-legend">How can we reach you?</legend>
-          <p class="eq-hint">We reply personally &mdash; never an automated response.</p>
-          <div class="eq-grid">
-            <div class="eq-field eq-field-wide">
-              <label for="parentName">Your full name</label>
-              <input type="text" id="parentName" name="parentName" autocomplete="name" required>
-              <span class="eq-error" data-error="parentName">Please enter your name.</span>
-            </div>
-            <div class="eq-field">
-              <label for="email">Email address</label>
-              <input type="email" id="email" name="email" autocomplete="email" required>
-              <span class="eq-error" data-error="email">Please enter a valid email.</span>
-            </div>
-            <div class="eq-field">
-              <label for="phone">Phone number</label>
-              <input type="tel" id="phone" name="phone" autocomplete="tel" required>
-              <span class="eq-error" data-error="phone">Please enter a phone number.</span>
-            </div>
-          </div>
-          <label class="eq-consent">
-            <input type="checkbox" id="consent" name="consent" required>
-            <span>I agree to HGTutors contacting me about this enquiry, and to the
-              <a href="#">privacy policy</a>.</span>
-          </label>
-          <span class="eq-error" data-error="consent">Please tick to continue.</span>
-          <div class="eq-actions">
-            <button type="button" class="eq-btn-ghost" data-back>Back</button>
-            <button type="submit" class="eq-btn eq-submit">Send enquiry</button>
-          </div>
-        <p class="eq-reassure">Our team replies personally, usually within 24 hours.</p>
-        </fieldset>
-
-        <!-- SUCCESS -->
-        <div class="eq-done" data-step="done">
-          <div class="eq-done-mark" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
-              stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6.5"/></svg>
-          </div>
-          <h2 class="eq-done-title">Thank you &mdash; your enquiry is with Helen</h2>
-          <p class="eq-done-text">She reviews every enquiry personally and will reply within
-            24 hours, usually sooner.</p>
-          <a class="eq-btn-ghost eq-done-btn" href="index.html">Back to homepage</a>
+      <section class="fd fd-c" aria-labelledby="h-title">
+  <div class="fd-wrap">
+    <div class="fd-card fdc-card">
+      <aside class="fdc-panel">
+        <div class="subheading fdc-eyebrow">make an enquiry</div>
+        <h2 id="h-title" class="fd-h2 fdc-h2">Tell us about your child</h2>
+        <p class="fdc-lead">It takes about a minute. Here&rsquo;s what happens next:</p>
+        <ol class="fdc-steps"><li><span class="fdc-step-n">1</span><span><strong>We read it personally</strong>Every enquiry is reviewed by our team.</span></li><li><span class="fdc-step-n">2</span><span><strong>We call you</strong>Usually within 24 hours, to understand your child.</span></li><li><span class="fdc-step-n">3</span><span><strong>We match one tutor</strong>Chosen for your child &mdash; never a list.</span></li></ol>
+        <div class="fdc-contact">
+          <a href="tel:02000000000"><span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h3.5l1.7 4.3-2.2 1.4a11 11 0 005.3 5.3l1.4-2.2L19 14.5V18a2 2 0 01-2 2A15 15 0 013 6a2 2 0 012-2z"/></svg></span>020 0000 0000</a>
+          <a href="mailto:enquiries@hgtutors.com"><span aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg></span>enquiries@hgtutors.com</a>
         </div>
-
-      </form>
+      </aside>
+      <div class="fdc-body">
+        <form class="fd-form" novalidate>
+          <div class="fdc-form-head">
+            <h3 class="fdc-form-title">Your details</h3>
+            <p class="fdc-form-hint">All fields are required unless marked optional.</p>
+          </div>
+          <div class="fd-grid">
+            <div class="fdc-group-label fd-wide"><span>About you</span></div>
+            <div class="fd-field"><label for="h-name">Your name</label><input id="h-name" name="h-name" type="text" placeholder="Your full name" autocomplete="name" required></div>
+            <div class="fd-field"><label for="h-email">Email</label><input id="h-email" name="h-email" type="email" placeholder="you@example.com" autocomplete="email" required></div>
+            <div class="fd-field"><label for="h-phone">Phone</label><input id="h-phone" name="h-phone" type="tel" placeholder="07700 900000" autocomplete="tel" required></div>
+            <div class="fd-field"><label for="h-where">Tuition</label><select id="h-where" name="h-where" required><option value="" selected disabled>Select&hellip;</option><option>In person, Central London</option><option>Online</option><option>Either is fine</option></select></div>
+            <div class="fdc-group-label fd-wide"><span>About your child</span></div>
+            <div class="fd-field"><label for="h-child">Child&rsquo;s name</label><input id="h-child" name="h-child" type="text" placeholder="Child&rsquo;s full name" required></div>
+            <div class="fd-field"><label for="h-dob">Date of birth</label><input id="h-dob" name="h-dob" type="date" required></div>
+            <div class="fd-field"><label for="h-school">Current school</label><input id="h-school" name="h-school" type="text" placeholder="e.g. Hill House" required></div>
+            <div class="fd-field"><label for="h-exam">Preparing for</label><select id="h-exam" name="h-exam" required><option value="" selected disabled>Select&hellip;</option><option>7+ (Year 2 entry)</option><option>8+ (Year 3 entry)</option><option>9+ (Year 4 entry)</option><option>10+ (Year 5 entry)</option><option>11+ (Year 6 entry)</option><option>13+ (Year 8 entry)</option><option>ISEB Common Pre-Test</option><option>General English &amp; maths support</option><option>Not sure yet</option></select></div>
+            <div class="fd-field fd-wide"><label for="h-notes">Anything else <span class="fd-opt">(optional)</span></label><textarea id="h-notes" name="h-notes" rows="3" placeholder="Anything you&rsquo;d like us to know&hellip;"></textarea></div>
+          </div>
+          <div class="fdc-foot">
+            <label class="fd-consent"><input type="checkbox" name="h-consent" required><span>I&rsquo;m happy for HG Tuition to contact me about this enquiry.</span></label>
+            <button type="submit" class="fd-btn">Send enquiry</button>
+          </div>
+          <p class="fd-error" role="alert">Please complete the highlighted fields.</p>
+        </form>
+        <div class="fd-done" role="status"><div class="fd-done-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+          <h3 class="fd-done-title">Thank you</h3><p>We&rsquo;ve received your enquiry and will be in touch within 24 hours.</p></div>
+      </div>
     </div>
-
   </div>
 </section>
 <section class="footer-one">
@@ -707,96 +607,34 @@
           <div></div>
           <script src="assets/jquery.min.js" type="text/javascript"></script><script src="assets/site-vendor.js" type="text/javascript"></script><script src="assets/site-ix.js" type="text/javascript"></script><script src="assets/site-core.js" type="text/javascript"></script><script src="assets/site.js" type="text/javascript"></script><a href="enquire/index.html" class="hg-cta" aria-label="Enquire now"><span class="hg-cta-mark" aria-hidden="true">HG</span><span class="hg-cta-text"><span class="hg-cta-title">Enquire Now</span><span class="hg-cta-sub">We reply within 24 hours</span></span><span class="hg-cta-pulse" aria-hidden="true"></span></a><script>
 (function(){
-  var form = document.getElementById('enquiryForm');
-  if(!form) return;
-
-  var steps   = Array.prototype.slice.call(form.querySelectorAll('.eq-step'));
-  var done    = form.querySelector('.eq-done');
-  var fill    = document.querySelector('.eq-progress-fill');
-  var nowEl   = document.querySelector('.eq-step-now');
-  var progress= document.querySelector('.eq-progress');
-  var current = 0;
-
-  function show(i){
-    steps.forEach(function(s,idx){ s.classList.toggle('is-active', idx===i); });
-    current = i;
-    if(fill)  fill.style.width = ((i+1)/steps.length*100) + '%';
-    if(nowEl) nowEl.textContent = (i+1);
-    var card = document.querySelector('.eq-card');
-    if(card && window.scrollY > card.offsetTop){
-      card.scrollIntoView({behavior:'smooth', block:'start'});
+  document.querySelectorAll('.fd-form').forEach(function(f){
+    var card=f.parentElement, err=f.querySelector('.fd-error');
+    function validate(){
+      var ok=true;
+      f.querySelectorAll('.fd-field').forEach(function(fd){
+        var el=fd.querySelector('input,select,textarea'); if(!el) return;
+        var bad=!el.checkValidity(); fd.classList.toggle('has-error',bad); if(bad) ok=false;
+      });
+      var c=f.querySelector('.fd-consent'), cb=c.querySelector('input');
+      c.classList.toggle('has-error',!cb.checked); if(!cb.checked) ok=false;
+      return ok;
     }
-    var first = steps[i].querySelector('input:not([type=radio]):not([type=checkbox]), textarea');
-    if(first && window.innerWidth > 767){ setTimeout(function(){ first.focus(); }, 260); }
-  }
-
-  function setError(key, on){
-    var el = form.querySelector('[data-error="'+key+'"]');
-    if(el) el.classList.toggle('is-shown', !!on);
-    var input = form.querySelector('[name="'+key+'"]');
-    if(input && input.closest('.eq-field')){
-      input.closest('.eq-field').classList.toggle('has-error', !!on);
-    }
-  }
-
-  function validate(i){
-    var step = steps[i], ok = true;
-    // radio groups
-    var radios = step.querySelectorAll('input[type=radio]');
-    if(radios.length){
-      var name = radios[0].name;
-      if(!form.querySelector('input[name="'+name+'"]:checked')){ setError(name,true); ok=false; }
-      else setError(name,false);
-    }
-    // required text / email / tel / date
-    Array.prototype.forEach.call(step.querySelectorAll('input[required], textarea[required]'), function(f){
-      if(f.type==='checkbox'){
-        if(!f.checked){ setError(f.name,true); ok=false; } else setError(f.name,false);
-        return;
-      }
-      var v = (f.value||'').trim();
-      var bad = !v;
-      if(!bad && f.type==='email'){ bad = !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v); }
-      if(!bad && f.type==='tel'){ bad = v.replace(/[^0-9]/g,'').length < 7; }
-      setError(f.name, bad);
-      if(bad) ok=false;
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      var ok=validate(); err.classList.toggle('is-visible',!ok);
+      if(!ok){ var first=f.querySelector('.has-error input,.has-error select,.has-error textarea'); if(first) first.focus(); return; }
+      card.classList.add('is-sent');
     });
-    return ok;
-  }
-
-  form.addEventListener('click', function(e){
-    var next = e.target.closest('[data-next]');
-    var back = e.target.closest('[data-back]');
-    if(next){
-      e.preventDefault();
-      if(validate(current) && current < steps.length-1) show(current+1);
-    }
-    if(back){
-      e.preventDefault();
-      if(current > 0) show(current-1);
-    }
+    f.addEventListener('change',function(e){
+      var t=e.target;
+      if(t.type==='date'||t.tagName==='SELECT') t.classList.toggle('has-value',!!t.value);
+      var fd=t.closest('.fd-field,.fd-consent'); if(fd) fd.classList.remove('has-error');
+    });
+    f.addEventListener('input',function(e){
+      var fd=e.target.closest('.fd-field'); if(fd && e.target.checkValidity()) fd.classList.remove('has-error');
+    });
   });
-
-  // clear a radio error as soon as one is picked
-  form.addEventListener('change', function(e){
-    if(e.target.type==='radio' || e.target.type==='checkbox'){ setError(e.target.name,false); }
-  });
-  form.addEventListener('input', function(e){
-    if(e.target.name){ setError(e.target.name,false); }
-  });
-
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    if(!validate(current)) return;
-    // front-end only: back end wired later
-    steps.forEach(function(s){ s.classList.remove('is-active'); });
-    if(progress) progress.style.display='none';
-    if(done) done.classList.add('is-active');
-    var card = document.querySelector('.eq-card');
-    if(card) card.scrollIntoView({behavior:'smooth', block:'center'});
-  });
-
-  show(0);
 })();
-</script></body>
+</script>
+</body>
         </html>
